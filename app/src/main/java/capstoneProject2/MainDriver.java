@@ -17,7 +17,7 @@ public class MainDriver {
         items.add(new Item("Milk", 7.00));
         items.add(new Item("Milk", 7.00));
         items.add(new Item("Newspaper", 5.00));
-        cart.addToCart(items, wallet);
+        cart.addToCart(items);
 
         if (wallet.checkWalletBalance()) {
             cart.purchaseAll(wallet);

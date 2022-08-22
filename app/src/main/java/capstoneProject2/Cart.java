@@ -7,7 +7,7 @@ public class Cart {
     static double totalCost = 0.0;
 
 
-    public void addToCart(LinkedList<Item> li, Wallet wallet) {
+    public void addToCart(LinkedList<Item> li) {
 
 //        List<String> cartItems = new LinkedList<>();
 

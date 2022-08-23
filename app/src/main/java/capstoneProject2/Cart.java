@@ -13,7 +13,6 @@ public class Cart {
             totalCost = totalCost + item.getTotalCost();
             cartItems.add(item);
         }
-        System.out.println("Total cost of the cart: " + totalCost);
 
     }
     public void displayCart()
@@ -25,6 +24,9 @@ public class Cart {
             System.out.println(item.getItemNAme()+"\t"+item.getQuantity()+"\t"+item.getTotalCost());
         }
         System.out.println("---------------------");
+    }
+    public void clearCart(){
+        cartItems.clear();
     }
     public void purchaseAll(Wallet wallet) {
         if (totalCost >= 100) {

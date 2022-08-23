@@ -10,8 +10,8 @@ public class MainDriver {
         MilkOffer mf = new MilkOffer();
         Item i = new Item();
         i.addItem(new Item("Apple", 1));
-        i.addItem(new Item("Newspaper", 0));
-        i.addItem(new Item("Milk", 2));
+        i.addItem(new Item("Newspaper", 1));
+        i.addItem(new Item("Milk", 1));
         cart.addToCart(i.cartItems);
         cart.displayCart();
         if (wallet.checkWalletBalance()) {

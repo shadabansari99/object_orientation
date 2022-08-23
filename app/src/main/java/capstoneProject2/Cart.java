@@ -1,27 +1,32 @@
 package capstoneProject2;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class Cart {
     static double totalCost = 0.0;
+    public LinkedList<Item> cartItems = new LinkedList<>();
 
 
     public void addToCart(LinkedList<Item> li) {
 
-//        List<String> cartItems = new LinkedList<>();
-        System.out.println("All items in cart are");
-        System.out.println("---------------------");
         for (Item item : li) {
-            totalCost = totalCost + item.getCost();
-            System.out.println(item.getItemNAme());
+            totalCost = totalCost + item.getTotalCost();
+            cartItems.add(item);
         }
-        System.out.println("---------------------");
-
         System.out.println("Total cost of the cart: " + totalCost);
 
     }
-    public void purchaseAll(LinkedList<Item> li1,Wallet wallet) {
+    public void displayCart()
+    {
+        System.out.println("All items in cart are");
+        System.out.println("---------------------");
+        for(Item item: cartItems)
+        {
+            System.out.println(item.getItemNAme()+"\t"+item.getQuantity()+"\t"+item.getTotalCost());
+        }
+        System.out.println("---------------------");
+    }
+    public void purchaseAll(Wallet wallet) {
         if (totalCost >= 100) {
             System.out.println("---------------------");
             System.out.println("Purchased successfully");

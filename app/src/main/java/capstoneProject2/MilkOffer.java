@@ -3,7 +3,7 @@ package capstoneProject2;
 import java.util.LinkedList;
 
 public class MilkOffer {
-    public void milkOffer(LinkedList<Item> lm) {
+    public int milkOffer(LinkedList<Item> lm) {
         int count = 0;
         int totalCount=0;
 
@@ -21,8 +21,9 @@ public class MilkOffer {
                 totalCount = totalCount + (count / 2);
             }
         }
-        System.out.println("You got buy 2 get 1 free offer on milk");
-
-        System.out.println(totalCount);
+//        System.out.println("You got buy 2 get 1 free offer on milk");
+//
+//        System.out.printf("You will get total %d milk packets",totalCount);
+    return totalCount;
     }
 }

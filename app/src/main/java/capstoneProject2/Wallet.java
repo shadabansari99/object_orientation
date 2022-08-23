@@ -16,11 +16,12 @@ public class Wallet {
     }
 
     public boolean checkWalletBalance() {
-        if ( walletBalance >=Cart.totalCost ) {
-            System.out.println("your wallet balance: " + walletBalance);
-
+        if ( walletBalance >=Cart.totalCost ) //the user can buy the products
+        {
+            System.out.println("Your wallet balance: " + walletBalance);
             return true;
         }
-        return false;
+        System.out.println("Your wallet balance: " + walletBalance);
+        return false; //else he cant buy the items
     }
 }

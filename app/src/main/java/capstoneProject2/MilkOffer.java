@@ -21,9 +21,6 @@ public class MilkOffer {
                 totalCount = totalCount + (count / 2);
             }
         }
-//        System.out.println("You got buy 2 get 1 free offer on milk");
-//
-//        System.out.printf("You will get total %d milk packets",totalCount);
     return totalCount;
     }
 }

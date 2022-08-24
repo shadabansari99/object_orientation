@@ -15,7 +15,7 @@ public class Wallet {
         this.walletBalance = walletBalance;
     }
 
-    public boolean checkWalletBalance() {
+    public boolean checkWalletBalance() {  //to check the wallet balance is more than cart balance or not
         Cart c = new Cart();
         if ( walletBalance >=c.totalCost ) //the user can buy the products
         {
@@ -24,6 +24,6 @@ public class Wallet {
             return true;
         }
         System.out.println("Your wallet balance: " + walletBalance);
-        return false; //else he cant buy the items
+        return false; //returns false the user can't but the items
     }
 }

@@ -20,7 +20,7 @@ public class Fruitbowl {
         fruits.add(new Fruit("Jackfruit", "Yellow","soft","Large"));
         fruits.add(new Fruit("Avocado", "Green","soft","Medium"));
 
-        MultilayerBowl m=new MultilayerBowl();
+        Seggregator m=new Seggregator();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter any one number \n 1.Segregate by size \n 2.Segregate by color \n 3.Segregate by type");
         switch (sc.nextInt()) {

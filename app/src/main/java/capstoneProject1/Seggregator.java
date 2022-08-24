@@ -3,7 +3,7 @@ package capstoneProject1;
 import java.util.LinkedList;
 import java.util.List;
 
-public class MultilayerBowl {
+public class Seggregator {
 
     public void segregationBySize(LinkedList<Fruit> t1)
     {

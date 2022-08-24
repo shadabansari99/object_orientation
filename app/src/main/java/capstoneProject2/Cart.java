@@ -25,10 +25,10 @@ public class Cart {
         }
         System.out.println("---------------------");
     }
-    public void clearCart(){
+    public void clearCart(){  //To empty the cart
         cartItems.clear();
     }
-    public void purchaseAll(Wallet wallet) {
+    public void purchaseAll(Wallet wallet) { //for purchasing and applying discount and updating the wallet balance
         if (totalCost >= 100) {
             System.out.println("---------------------");
             System.out.println("Purchased successfully");
@@ -40,7 +40,8 @@ public class Cart {
             System.out.println("---------------------");
 
         }
-        else {
+        else {                  //for purchasing and updating the wallet balance
+
             System.out.println("---------------------");
             System.out.println("Purchased successfully");
             System.out.println("You paid: " + totalCost);

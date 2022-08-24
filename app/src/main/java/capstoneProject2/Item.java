@@ -7,7 +7,7 @@ public class Item {
     private double cost;
     private int quantity;
     private double totalCost;
-    public LinkedList<Item> cartItems = new LinkedList<>();
+    public LinkedList<Item> cartItems = new LinkedList<>(); //list for storing the items
 
     public Item() {
 
@@ -39,7 +39,7 @@ public class Item {
     public int getQuantity() {
         return quantity;
     }
-    public void addItem(Item item)
+    public void addItem(Item item) //adding items to cart
     {
     cartItems.add(item);
     }

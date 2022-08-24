@@ -11,17 +11,17 @@ public class MilkOffer {
 
             if (item.getItemNAme().equalsIgnoreCase("Milk")) {
                 count = item.getQuantity();
-                if (count == 2) {
+                if (count == 2) {   // updation of 2 milk packets
                     totalCount = count + 1;
-                } else if (count > 2) {
+                } else if (count > 2) { // updation of 3 milk packets
                     totalCount = count + (count / 2);
-                } else {
+                } else {          // updation of more than 2 milk packets
                     totalCount = totalCount + (count / 2);
                }
               }
             }
 
-        return totalCount;
+        return totalCount;  //returning total number of packets
 
     }
 }

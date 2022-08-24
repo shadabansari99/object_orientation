@@ -9,7 +9,7 @@ import static java.lang.System.exit;
 public class Fruitbowl {
 
     public static void main(String[] args) {
-        LinkedList<Fruit> fruits= new LinkedList<>();
+        LinkedList<Fruit> fruits= new LinkedList<>();  //List of Fruit objects
         fruits.add(new Fruit("Watermelon","Red","soft","Large"));
         fruits.add(new Fruit("Mango","Yellow","pulpy","Medium"));
         fruits.add(new Fruit("Strawberry", "Red","pulpy","Small"));
@@ -20,7 +20,7 @@ public class Fruitbowl {
         fruits.add(new Fruit("Jackfruit", "Yellow","soft","Large"));
         fruits.add(new Fruit("Avocado", "Green","soft","Medium"));
 
-        Seggregator m=new Seggregator();
+        Seggregator m=new Seggregator(); //Callling Seggregator class for seggregation on size,color,type
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter any one number \n 1.Segregate by size \n 2.Segregate by color \n 3.Segregate by type");
         switch (sc.nextInt()) {
